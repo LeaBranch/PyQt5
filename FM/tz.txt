@@ -1,0 +1,34 @@
+
+    FILE MANAGER
+
+0. menubar
+    - File
+        + Create File       Ctrl+Shift+N
+        + Create Folder     Ctrl+N
+        + Quit              Ctrl+Q
+    - Edit
+        + Copy              Ctrl+C
+        + Cut               Ctrl+X
+        + Paste             Ctrl+V
+        + Move              Ctrl+M
+        + Rename            F2
+        + Delete            delete
+    + View
+        + Minimize          Ctrl+Alt+M
+        + Normal            Ctrl+Alt+N
+        + Fullscreen        Ctrl+Alt+F
+    - Help
+        * About             F1
+
+\/ 1. вывод на экран список эл-ов в директории (TableWidget)
+\/ 2. колонки: размер, тип, дата изменения
+\/ 3. переход по директориям
+    \/ - вверх
+    \/ - вниз
+\/ 4. кнопки "назад" и "вперед"
+5. поиск !!!
+6. модификации:
+    - созд. 
+    - удал. 
+    - копир.
+    - перемещ.

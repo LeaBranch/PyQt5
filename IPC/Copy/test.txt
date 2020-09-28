@@ -1,0 +1,3 @@
+hello my dear friend
+I love linux
+my first programm on Python3

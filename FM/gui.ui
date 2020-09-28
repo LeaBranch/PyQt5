@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>File Manager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>800</width>
+      <height>519</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>1</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>800</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>35</number>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>size</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>type</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>modified time</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>0</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>0</y>
+      <width>601</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Settings">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>0</y>
+      <width>60</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>40</pointsize>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <disabledoff>settings_icon.png</disabledoff>
+     </iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Find">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>0</y>
+      <width>60</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Find</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>40</y>
+      <width>160</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255)</string>
+    </property>
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QCheckBox" name="show_sidebar">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>140</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Show sidebar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="select_all">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>140</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Select All</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="full_path">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>92</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Full path</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>140</width>
+       <height>10</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="show_hidden">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>140</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Show hidden files</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCreate_folder"/>
+    <addaction name="actionCreate_file"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionMove"/>
+    <addaction name="actionRename"/>
+    <addaction name="actionDelete"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionMinimize"/>
+    <addaction name="actionNormal"/>
+    <addaction name="actionFullscreen"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionCreate_folder">
+   <property name="text">
+    <string>Create folder</string>
+   </property>
+  </action>
+  <action name="actionCreate_file">
+   <property name="text">
+    <string>Create file</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionMove">
+   <property name="text">
+    <string>Move</string>
+   </property>
+  </action>
+  <action name="actionRename">
+   <property name="text">
+    <string>Rename</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionMinimize">
+   <property name="text">
+    <string>Minimized</string>
+   </property>
+  </action>
+  <action name="actionNormal">
+   <property name="text">
+    <string>Normal</string>
+   </property>
+  </action>
+  <action name="actionFullscreen">
+   <property name="text">
+    <string>Fullscreen</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
